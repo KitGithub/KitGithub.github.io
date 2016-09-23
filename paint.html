@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:600px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+#canvas{
+    height:360px;
+    width:640px;
+	background-color: #FFF;
+	border:1px solid #d3d3d3;
+	float:left;
+    padding:5px;	 
+}
+#colors{
+	line-height:30px;
+    background-color:#eeeeee;
+    height:600px;
+    width:160px;
+    float:right;
+    padding:5px;
+}
+</style>
+<script src="paint.js"></script>
+</head>
+<body>
+
+<div id="header">
+<h1>Paint Demo</h1>
+</div>
+
+<div id="nav">
+
+</div>
+
+
+<h2>PAINT</h2>
+<canvas id="canvas" width="640" height="360"></canvas>
+
+
+<div id="colors">
+<p>
+	<button id="turnPage">Next Coloring Book Page</button>
+	<button id="blankPage">Blank Page</button></p>
+      <label for="RED">RED</label> 
+      <input type="range" id="RED" max="255" min="0" value="255">
+    </p>
+	        <p>
+      <label for="GREEN">GREEN</label> 
+      <input type="range" id="GREEN" max="255" min="0" value="0">
+    </p>
+	        <p>
+      <label for="BLUE">BLUE</label> 
+      <input type="range" id="BLUE" max="255" min="0" value="0">
+    </p>
+	<p>
+      <label for="brushsize">Brush Size</label> 
+      <input type="range" id="brushsize" max="50" min="1">
+    </p>
+	<button id="bigger">Change brush/paint</button>
+	</p> COLOR SELECTED:
+	<canvas id="canvas2" width="50" height="50">Color Selected</canvas>
+	<p>
+
+</div>
+
+<div id="footer">
+</div>
+
+</body>
+</html>
